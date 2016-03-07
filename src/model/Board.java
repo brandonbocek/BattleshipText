@@ -1,3 +1,4 @@
+package model;
 public class Board{
 	
 	final int ROWS=11;
@@ -31,10 +32,16 @@ public class Board{
 	public void setSquare(int row, int column, String value){
 		grid[row][column] = value;
 	}
-	
+	//get an individual square from the grid String array
+	public String getSquare(int row, int column){
+		try{
+			return grid[row][column];
+		}catch(Exception e){
+			return "hi";
+		}
+	}
 	//get the game board's String array
-	public String[][] getBoard(){
+	public String[][] getGrid(){
 		return grid;
 	}
-	
 }
