@@ -21,7 +21,7 @@ public class BattleshipController {
 	//controller's constructor
 	public BattleshipController(Game game, BattleshipView view){
 		this.game=game;
-		this.view=view;
+		this.view=view; 
 	}
 	
 	public BattleshipView getBattleshipView(){
